@@ -34,8 +34,8 @@ import './style.css';
           <div>
             <p>
               <PaystackButton
-                text="Make Payment"
-                class="payButton"
+                class="paystack_payment_button"
+                text=<span>Make Payment</span>
                 callback={this.callback}
                 close={this.close}
                 disabled={false}
