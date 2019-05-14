@@ -1,3 +1,7 @@
+.body {
+  margin-top: 250px;
+  text-align: center;
+}
 .paystack_payment_button {
   display: inline-block;
   border-radius: 4px;
