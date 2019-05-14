@@ -8,11 +8,11 @@ import './style.css';
       state = {
         key: "pk_live_0c5b29b86d50a95c3d721c9e2e7e4f0aff7640dc",
         email: "shodipovi@gmail.com",
-        amount: 20000
+        amount: 10000
       }
  
       callback = (response) => {
-        console.log(response);
+        alert('success. transaction ref is ' + response.reference);
       }
  
       close = () => {
@@ -31,7 +31,7 @@ import './style.css';
  
       render() {
         return (
-          <div>
+          <div class="body">
             <p>
               <PaystackButton
                 class="paystack_payment_button"
