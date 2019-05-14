@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import PaystackButton from 'react-paystack';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './style.css';
 
-export default App;
+   class App extends Component {
+ 
+      state = {
+        key: "pk_live_0c5b29b86d50a95c3d721c9e2e7e4f0aff7640dc",
+        email: "shodipovi@gmail.com",
+        amount: 20000
+      }
+ 
+      callback = (response) => {
+        console.log(response);
+      }
+ 
+      close = () => {
+        console.log("Payment closed");
+      }
+ 
+      getReference = () => {
+        let text = "";
+        let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-.=";
+ 
+        for( let i=0; i < 15; i++ )
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+ 
+        return text;
+      }
+ 
+      render() {
+        return (
+          <div>
+            <p>
+              <PaystackButton
+                text="Make Payment"
+                class="payButton"
+                callback={this.callback}
+                close={this.close}
+                disabled={false}
+                embed={false}
+                reference={this.getReference()}
+                email={this.state.email}
+                amount={this.state.amount}
+                paystackkey={this.state.key}
+                tag="button"
+              />
+            </p>
+          </div>
+        );
+      }
+    }
+ 
+    export default App;

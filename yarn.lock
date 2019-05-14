@@ -1717,7 +1717,7 @@ arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-asap@~2.0.6:
+asap@~2.0.3, asap@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
@@ -6827,6 +6827,14 @@ path-type@^3.0.0:
   dependencies:
     pify "^3.0.0"
 
+paystack@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/paystack/-/paystack-2.0.1.tgz#14a854be4a9e29ecaeaea39f6ee34bedb18c3879"
+  integrity sha512-reVONV7ZUMln/iWeM60n0BbogF3/zFWmUrqbKYVNzEAv+p9TcWDCHfNZ2mBGXzIXhyTsNXWwf4wNcXe28btAHw==
+  dependencies:
+    promise "^7.1.1"
+    request "^2.79.0"
+
 pbkdf2@^3.0.3:
   version "3.0.17"
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.17.tgz#976c206530617b14ebb32114239f7b09336e93a6"
@@ -7637,6 +7645,13 @@ promise@8.0.2:
   dependencies:
     asap "~2.0.6"
 
+promise@^7.1.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
+  integrity sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==
+  dependencies:
+    asap "~2.0.3"
+
 prompts@^2.0.1:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.0.4.tgz#179f9d4db3128b9933aa35f93a800d8fce76a682"
@@ -7846,7 +7861,7 @@ react-dev-utils@^9.0.1:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@16.8.6:
+react-dom@^16.5.2, react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -7865,6 +7880,15 @@ react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+
+react-paystack@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-paystack/-/react-paystack-2.0.2.tgz#1d65fc4fd8a33db5ded1f58ac7551d0fcfd9c1ca"
+  integrity sha512-hTn1wNGHAp2LznA+y4XNoK+0P7Zgt4O2r4ItCm2dMV/UpyhP/1F0vizQF69kne4LbJbEVCfk+JiRabpQ8YERYA==
+  dependencies:
+    prop-types "^15.6.2"
+    react "^16.5.2"
+    react-dom "^16.5.2"
 
 react-scripts@3.0.1:
   version "3.0.1"
@@ -7926,7 +7950,7 @@ react-scripts@3.0.1:
   optionalDependencies:
     fsevents "2.0.6"
 
-react@16.8.6:
+react@^16.5.2, react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -8147,7 +8171,7 @@ request-promise-native@^1.0.5:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.87.0, request@^2.88.0:
+request@^2.79.0, request@^2.87.0, request@^2.88.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
