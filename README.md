@@ -38,7 +38,7 @@ Start dev server
 ```
 yarn start
 ```
-now open https://localhost:8000.
+now open https://localhost:3000.
 
 Testing with jest and standards
 
