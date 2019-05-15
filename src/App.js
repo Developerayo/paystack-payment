@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PaystackButton from 'react-paystack';
 
+import  secure from './img/secured-by-paystack.png';
 import './style.css';
 
    class App extends Component {
@@ -47,6 +48,9 @@ import './style.css';
                 tag="button"
               />
             </p>
+            <div className="secure">
+            <img className="secure" src={secure} alt="secured-by-paystack"/>
+            </div>
           </div>
         );
       }
