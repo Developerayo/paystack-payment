@@ -88,3 +88,15 @@ form input {
   color: #6B8E23;
   margin-bottom: 10px;
 }
+
+.secure {
+
+  padding-top: 55px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 400px !important;
+
+}
