@@ -45,3 +45,4 @@ Testing with jest and standards
 ```
 yarn test
 ```
+Don't forget to drop a ⭐️ I certainly do not mind🙂
